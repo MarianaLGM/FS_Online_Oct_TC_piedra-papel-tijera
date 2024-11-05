@@ -1,16 +1,61 @@
 body {
   font-family: Arial, sans-serif;
+  justify-content: center;
   text-align: center;
-  background-color: #f4f4f4;
+  background-image:linear-gradient(rgba(226, 224, 224, 0.5), rgba(226, 224, 224, 0.5)),url(https://static.vecteezy.com/system/resources/previews/010/307/906/non_2x/hands-playing-rock-paper-scissors-game-flat-design-style-illustration-vector.jpg);
+  background-size: 50%;
+
+}
+.juego{
+  display: block;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 200px;
+  
 }
 .boton-jugada {
-  background-color: #3498db;
+  background-color: hsl(204, 17%, 68%);
   color: #fff;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 32px;
   cursor: pointer;
+  letter-spacing: .2em;
+  margin:40px;
+  border-radius: 120px;
 }
-#resultados {
-  font-size: 20px;
-  margin: 20px 0;
+
+.boton-jugada:hover{
+  background: #e26d6d;
+  transform: scale(1.2);
 }
+
+#contador-usuario{
+  font-size: 26px;
+  background-color: hwb(67 56% 9%);
+  border-style:ridge;
+  height: 35px;
+  width: 320px;
+  padding: 15px;
+  margin-left: 130px;
+}
+
+#contador-ordenador{
+  font-size: 26px;
+  background-color: hsl(204, 67%, 75%);
+  border-style:ridge;
+  height: 35px;
+  width: 320px;
+  padding: 15px;
+  margin-right: 130px;
+}
+
+img{
+  scale:0.4;
+}
+
+#resultados{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
