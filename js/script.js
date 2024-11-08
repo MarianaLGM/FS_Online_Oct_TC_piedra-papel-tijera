@@ -23,27 +23,27 @@ function inicioJuego (miOpcion){
     const opcionOrdenador = opciones[Math.floor(Math.random()*3)]   
 
 if (miOpcion===opcionOrdenador){
-    resultados= "Empate"
+    resultados= "¡HABÉIS EMPADADO!"
 
 }else if (
     (miOpcion === "piedra" && opcionOrdenador === "tijera") 
 ){
-    resultados= "Ganaste"
+    resultados= "¡GANASTE!"
     contadorUsuario ++
 }else if (   
     (miOpcion === "papel" && opcionOrdenador === "piedra") 
 ){
-    resultados="Ganaste"
+    resultados="¡GANASTE!"
     contadorUsuario ++
 }else if (   
     (miOpcion === "tijera" && opcionOrdenador === "papel")         
 ){
-    resultados="Ganaste"
+    resultados="¡GANASTE!"
     contadorUsuario ++
 
 
 }else{
-    resultados="Perdiste"
+    resultados="¡PERDISTE!"
     contadorOrdenador ++
 }
  document.getElementById("resultado-final").textContent= resultados
