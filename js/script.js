@@ -28,22 +28,22 @@ if (miOpcion===opcionOrdenador){
 }else if (
     (miOpcion === "piedra" && opcionOrdenador === "tijera") 
 ){
-    resultados= "¡GANASTE!"
+    resultados= "¡GANASTE!, el ordenador ha escogido " + opcionOrdenador
     contadorUsuario ++
 }else if (   
     (miOpcion === "papel" && opcionOrdenador === "piedra") 
 ){
-    resultados="¡GANASTE!"
+    resultados="¡GANASTE! el ordenador ha escogido " + opcionOrdenador
     contadorUsuario ++
 }else if (   
     (miOpcion === "tijera" && opcionOrdenador === "papel")         
 ){
-    resultados="¡GANASTE!"
+    resultados="¡GANASTE! el ordenador ha escogido " + opcionOrdenador
     contadorUsuario ++
 
 
 }else{
-    resultados="¡PERDISTE!"
+    resultados="¡PERDISTE! el ordenador ha escogido " + opcionOrdenador
     contadorOrdenador ++
 }
  document.getElementById("resultado-final").textContent= resultados
